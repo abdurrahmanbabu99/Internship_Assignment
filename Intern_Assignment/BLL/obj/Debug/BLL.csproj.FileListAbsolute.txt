@@ -1,0 +1,14 @@
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\BLL.dll
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\BLL.pdb
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\AutoMapper.dll
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\DAL.dll
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\EntityFramework.dll
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\DAL.pdb
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\DAL.dll.config
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\AutoMapper.xml
+E:\Internship_Assignment\Intern_Assignment\BLL\bin\Debug\EntityFramework.xml
+E:\Internship_Assignment\Intern_Assignment\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Internship_Assignment\Intern_Assignment\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Internship_Assignment\Intern_Assignment\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Internship_Assignment\Intern_Assignment\BLL\obj\Debug\BLL.dll
+E:\Internship_Assignment\Intern_Assignment\BLL\obj\Debug\BLL.pdb

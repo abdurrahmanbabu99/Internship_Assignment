@@ -1,0 +1,12 @@
+E:\Internship_Assignment\Intern_Assignment\DAL\bin\Debug\DAL.dll.config
+E:\Internship_Assignment\Intern_Assignment\DAL\bin\Debug\DAL.dll
+E:\Internship_Assignment\Intern_Assignment\DAL\bin\Debug\DAL.pdb
+E:\Internship_Assignment\Intern_Assignment\DAL\bin\Debug\EntityFramework.dll
+E:\Internship_Assignment\Intern_Assignment\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Internship_Assignment\Intern_Assignment\DAL\bin\Debug\EntityFramework.xml
+E:\Internship_Assignment\Intern_Assignment\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Internship_Assignment\Intern_Assignment\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\Internship_Assignment\Intern_Assignment\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\Internship_Assignment\Intern_Assignment\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\Internship_Assignment\Intern_Assignment\DAL\obj\Debug\DAL.dll
+E:\Internship_Assignment\Intern_Assignment\DAL\obj\Debug\DAL.pdb

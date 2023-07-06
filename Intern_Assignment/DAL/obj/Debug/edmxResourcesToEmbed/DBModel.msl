@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Internship_AssignmentModelStoreContainer" CdmEntityContainer="Internship_AssignmentEntities">
+    <EntitySetMapping Name="Mobile_Storage">
+      <EntityTypeMapping TypeName="Internship_AssignmentModel.Mobile_Storage">
+        <MappingFragment StoreEntitySet="Mobile_Storage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ParentCode" ColumnName="ParentCode" />
+          <ScalarProperty Name="ProductBarcode" ColumnName="ProductBarcode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="SizeName" ColumnName="SizeName" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="VariantName" ColumnName="VariantName" />
+          <ScalarProperty Name="OldPrice" ColumnName="OldPrice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+          <ScalarProperty Name="WarehouseList" ColumnName="WarehouseList" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="TotalPurchase" ColumnName="TotalPurchase" />
+          <ScalarProperty Name="LastPurchaseDate" ColumnName="LastPurchaseDate" />
+          <ScalarProperty Name="LastPurchaseSupplier" ColumnName="LastPurchaseSupplier" />
+          <ScalarProperty Name="TotalSales" ColumnName="TotalSales" />
+          <ScalarProperty Name="LastSalesDate" ColumnName="LastSalesDate" />
+          <ScalarProperty Name="LastSalesCustomer" ColumnName="LastSalesCustomer" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

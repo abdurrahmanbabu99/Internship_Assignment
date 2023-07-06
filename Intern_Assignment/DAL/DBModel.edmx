@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Internship_AssignmentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Internship_Assignment.dbo.Mobile_Storage' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Mobile_Storage">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="UnitName" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Code" />
+            <PropertyRef Name="OldPrice" />
+            <PropertyRef Name="Price" />
+            <PropertyRef Name="CostPrice" />
+            <PropertyRef Name="TotalPurchase" />
+            <PropertyRef Name="LastPurchaseSupplier" />
+            <PropertyRef Name="TotalSales" />
+            <PropertyRef Name="LastSalesDate" />
+            <PropertyRef Name="ImagePath" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Status" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" />
+          <Property Name="UnitName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ParentCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductBarcode" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="BrandName" Type="nvarchar" MaxLength="50" />
+          <Property Name="SizeName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ColorName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModelName" Type="nvarchar" MaxLength="50" />
+          <Property Name="VariantName" Type="nvarchar" MaxLength="50" />
+          <Property Name="OldPrice" Type="float" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="CostPrice" Type="float" Nullable="false" />
+          <Property Name="WarehouseList" Type="nvarchar" MaxLength="50" />
+          <Property Name="stock" Type="float" />
+          <Property Name="TotalPurchase" Type="float" Nullable="false" />
+          <Property Name="LastPurchaseDate" Type="datetime" />
+          <Property Name="LastPurchaseSupplier" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TotalSales" Type="float" Nullable="false" />
+          <Property Name="LastSalesDate" Type="datetime" Nullable="false" />
+          <Property Name="LastSalesCustomer" Type="nvarchar" MaxLength="50" />
+          <Property Name="ImagePath" Type="image" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Internship_AssignmentModelStoreContainer">
+          <EntitySet Name="Mobile_Storage" EntityType="Self.Mobile_Storage" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Mobile_Storage].[Id] AS [Id], 
+    [Mobile_Storage].[CategoryName] AS [CategoryName], 
+    [Mobile_Storage].[UnitName] AS [UnitName], 
+    [Mobile_Storage].[Name] AS [Name], 
+    [Mobile_Storage].[Code] AS [Code], 
+    [Mobile_Storage].[ParentCode] AS [ParentCode], 
+    [Mobile_Storage].[ProductBarcode] AS [ProductBarcode], 
+    [Mobile_Storage].[Description] AS [Description], 
+    [Mobile_Storage].[BrandName] AS [BrandName], 
+    [Mobile_Storage].[SizeName] AS [SizeName], 
+    [Mobile_Storage].[ColorName] AS [ColorName], 
+    [Mobile_Storage].[ModelName] AS [ModelName], 
+    [Mobile_Storage].[VariantName] AS [VariantName], 
+    [Mobile_Storage].[OldPrice] AS [OldPrice], 
+    [Mobile_Storage].[Price] AS [Price], 
+    [Mobile_Storage].[CostPrice] AS [CostPrice], 
+    [Mobile_Storage].[WarehouseList] AS [WarehouseList], 
+    [Mobile_Storage].[stock] AS [stock], 
+    [Mobile_Storage].[TotalPurchase] AS [TotalPurchase], 
+    [Mobile_Storage].[LastPurchaseDate] AS [LastPurchaseDate], 
+    [Mobile_Storage].[LastPurchaseSupplier] AS [LastPurchaseSupplier], 
+    [Mobile_Storage].[TotalSales] AS [TotalSales], 
+    [Mobile_Storage].[LastSalesDate] AS [LastSalesDate], 
+    [Mobile_Storage].[LastSalesCustomer] AS [LastSalesCustomer], 
+    [Mobile_Storage].[ImagePath] AS [ImagePath], 
+    [Mobile_Storage].[Type] AS [Type], 
+    [Mobile_Storage].[Status] AS [Status]
+    FROM [dbo].[Mobile_Storage] AS [Mobile_Storage]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Internship_AssignmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Mobile_Storage">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="UnitName" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Code" />
+            <PropertyRef Name="OldPrice" />
+            <PropertyRef Name="Price" />
+            <PropertyRef Name="CostPrice" />
+            <PropertyRef Name="TotalPurchase" />
+            <PropertyRef Name="LastPurchaseSupplier" />
+            <PropertyRef Name="TotalSales" />
+            <PropertyRef Name="LastSalesDate" />
+            <PropertyRef Name="ImagePath" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Status" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UnitName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ParentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ProductBarcode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BrandName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SizeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ColorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModelName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="VariantName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OldPrice" Type="Double" Nullable="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="CostPrice" Type="Double" Nullable="false" />
+          <Property Name="WarehouseList" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="stock" Type="Double" />
+          <Property Name="TotalPurchase" Type="Double" Nullable="false" />
+          <Property Name="LastPurchaseDate" Type="DateTime" Precision="3" />
+          <Property Name="LastPurchaseSupplier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TotalSales" Type="Double" Nullable="false" />
+          <Property Name="LastSalesDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastSalesCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ImagePath" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Internship_AssignmentEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Mobile_Storage" EntityType="Self.Mobile_Storage" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Internship_AssignmentModelStoreContainer" CdmEntityContainer="Internship_AssignmentEntities">
+          <EntitySetMapping Name="Mobile_Storage">
+            <EntityTypeMapping TypeName="Internship_AssignmentModel.Mobile_Storage">
+              <MappingFragment StoreEntitySet="Mobile_Storage">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ParentCode" ColumnName="ParentCode" />
+                <ScalarProperty Name="ProductBarcode" ColumnName="ProductBarcode" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+                <ScalarProperty Name="SizeName" ColumnName="SizeName" />
+                <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+                <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+                <ScalarProperty Name="VariantName" ColumnName="VariantName" />
+                <ScalarProperty Name="OldPrice" ColumnName="OldPrice" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+                <ScalarProperty Name="WarehouseList" ColumnName="WarehouseList" />
+                <ScalarProperty Name="stock" ColumnName="stock" />
+                <ScalarProperty Name="TotalPurchase" ColumnName="TotalPurchase" />
+                <ScalarProperty Name="LastPurchaseDate" ColumnName="LastPurchaseDate" />
+                <ScalarProperty Name="LastPurchaseSupplier" ColumnName="LastPurchaseSupplier" />
+                <ScalarProperty Name="TotalSales" ColumnName="TotalSales" />
+                <ScalarProperty Name="LastSalesDate" ColumnName="LastSalesDate" />
+                <ScalarProperty Name="LastSalesCustomer" ColumnName="LastSalesCustomer" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
